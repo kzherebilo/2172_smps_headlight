@@ -202,7 +202,7 @@ int main(void)
         avgOutVoltageFB = (uint32_t)(sumOutVoltFB / MOV_AVG_WINDOW);
         avgOutCurrentFB = (uint16_t)(sumOutCurrFB / MOV_AVG_WINDOW);
 
-        adcStatus = ADC_IDLE;
+     
     }
     /* USER CODE END WHILE */
 
@@ -223,15 +223,11 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSI14;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI14|RCC_OSCILLATORTYPE_HSI48;
+  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.HSI14State = RCC_HSI14_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.HSI14CalibrationValue = 16;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL12;
-  RCC_OscInitStruct.PLL.PREDIV = RCC_PREDIV_DIV1;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -240,7 +236,7 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI48;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
@@ -426,7 +422,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOF, OSC_IN_NOT_IN_USE_Pin|OSC_OUT_NOT_IN_USE_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, PA5_NOT_IN_USE_Pin|PA9_NOT_IN_USE_Pin|STATUS_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, PA5_NOT_IN_USE_Pin|STATUS_LED_Pin|PIN10_NOT_IN_USE_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : OSC_IN_NOT_IN_USE_Pin OSC_OUT_NOT_IN_USE_Pin */
   GPIO_InitStruct.Pin = OSC_IN_NOT_IN_USE_Pin|OSC_OUT_NOT_IN_USE_Pin;
@@ -441,8 +437,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(OUTPUT_OVERLOAD_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA5_NOT_IN_USE_Pin PA9_NOT_IN_USE_Pin STATUS_LED_Pin */
-  GPIO_InitStruct.Pin = PA5_NOT_IN_USE_Pin|PA9_NOT_IN_USE_Pin|STATUS_LED_Pin;
+  /*Configure GPIO pins : PA5_NOT_IN_USE_Pin STATUS_LED_Pin PIN10_NOT_IN_USE_Pin */
+  GPIO_InitStruct.Pin = PA5_NOT_IN_USE_Pin|STATUS_LED_Pin|PIN10_NOT_IN_USE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -451,6 +447,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	uint16_t        expectedScOutVolt;
@@ -670,7 +667,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     }
 }
 
-
 /* USER CODE END 4 */
 
 /**
@@ -684,7 +680,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-      HAL_NVIC_SystemReset();
+	  HAL_NVIC_SystemReset();
   }
   /* USER CODE END Error_Handler_Debug */
 }

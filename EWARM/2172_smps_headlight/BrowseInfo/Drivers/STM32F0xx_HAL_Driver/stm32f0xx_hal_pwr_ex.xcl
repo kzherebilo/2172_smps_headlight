@@ -294,7 +294,7 @@ D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\Driver
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
 -DUSE_HAL_DRIVER=1
--DSTM32F030x6=1
+-DSTM32F042x6=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Full.h"
 -D_DLIB_CONFIG_FILE_STRING="C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Full.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V9.10.2.313/W64 for ARM"

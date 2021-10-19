@@ -6,13 +6,13 @@
 
 "-p" 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\ST\STM32F030F4.ddf" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\ST\STM32F042F4.ddf" 
 
 "--drv_verify_download" 
 
 "--semihosting" 
 
-"--device=STM32F030F4" 
+"--device=STM32F042F4" 
 
 "--drv_interface=SWD" 
 

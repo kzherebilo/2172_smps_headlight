@@ -78,7 +78,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>STM32F030F4	ST STM32F030F4</state>
+          <state>STM32F042F4	ST STM32F042F4</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -225,7 +225,7 @@
         <option>
           <name>CCDefines</name>
           <state>USE_HAL_DRIVER</state>
-          <state>STM32F030x6</state>
+          <state>STM32F042x6</state>
           <state></state>
         </option>
         <option>
@@ -774,7 +774,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$PROJ_DIR$/stm32f030x6_flash.icf</state>
+          <state>$PROJ_DIR$/stm32f042x6_flash.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -1052,7 +1052,7 @@
     <group>
       <name>EWARM</name>
       <file>
-        <name>$PROJ_DIR$/startup_stm32f030x6.s</name>
+        <name>$PROJ_DIR$/startup_stm32f042x6.s</name>
       </file>
     </group>
     <group>

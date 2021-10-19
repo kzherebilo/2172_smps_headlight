@@ -1,7 +1,7 @@
 D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\EWARM\2172_smps_headlight\BrowseInfo\Drivers\CMSIS\system_stm32f0xx.pbi: \
   D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\Core\Src\system_stm32f0xx.c \
   D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h \
-  D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x6.h \
+  D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\EWARM\..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f042x6.h \
   D:\private\Konstantin\Documents\projects\2021.720\src\2172_smps_headlight\EWARM\..\Drivers\CMSIS\Include\core_cm0.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
