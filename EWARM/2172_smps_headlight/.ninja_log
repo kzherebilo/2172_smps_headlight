@@ -1,0 +1,25 @@
+# ninja log v5
+11	465	6563338501963921	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/CMSIS/system_stm32f0xx.o	89a171387cf2da77
+7	521	6563338502412541	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o	11f5841b20ccc910
+21	578	6563338503089368	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_adc_ex.o	93a462d5cfd019ea
+16	615	6563338503089368	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o	e7ba850895a06864
+27	780	6563338505109313	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o	695857dd53c1a675
+498	1027	6563338507572353	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o	758f7e7671f55ed0
+556	1197	6563338508912346	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o	727c8f124ce0bf95
+609	1232	6563338508942355	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o	73e5fcdd5d6c822b
+1	1271	6563338508842426	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_adc.o	fa45d2a7e4994ed6
+1059	1307	6563338509482344	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Application/EWARM/startup_stm32f030x6.o	9ac757bc5aa79a9c
+648	1342	6563338509672385	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o	3be05a21d707ffeb
+1227	1599	6563338513287867	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Application/User/Core/stm32f0xx_it.o	8b3f15f978bc59a2
+1372	1649	6563338513417850	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o	4bcc324375a69491
+1302	1698	6563338513867846	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Application/User/Core/stm32f0xx_hal_msp.o	44e9c7dab078c60a
+1321	1733	6563338514177847	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o	2f51d94564184e9
+1681	2026	6563338517564328	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o	5a2704af6fd2be02
+1727	2073	6563338517664345	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o	e23464c15fcda879
+1266	2190	6563338519190817	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Application/User/Core/main.o	472d0610bf519d01
+1764	2599	6563338523292470	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o	3672e82714860e65
+2056	3348	6563338530803887	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o	bc9789abfb968c44
+810	3655	6563338533833859	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o	de66cbd112af0da3
+1629	4359	6563338540855332	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Obj/Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o	fbb95b2254c6b585
+4381	4494	6563338542270751	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Exe/2172_smps_headlight.out	42dc47fd904c748c
+4558	4576	6563338543200777	D:/private/Konstantin/Documents/projects/2021.720/src/2172_smps_headlight/EWARM/2172_smps_headlight/Exe/2172_smps_headlight.hex	cf39a4e86c88d629
