@@ -124,9 +124,9 @@ void Error_Handler(void);
 // PID sampling period expressed in the number of TIM3 periods
 #define PID_PERIOD_CODE		10
 // Voltage loop set point in DIMMED mode, V
-#define PID_VLP_DIM_SP      12
+#define PID_VLP_DIM_SP      12.25
 // Voltage loop set point in BRIGHT mode, V
-#define PID_VLP_BRT_SP      24
+#define PID_VLP_BRT_SP      24.75
 // Current loop set point in DIMMED mode, V
 #define PID_CLP_DIM_SP      9
 // Current loop set point in BRIGHT mode, V

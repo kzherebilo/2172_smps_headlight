@@ -202,7 +202,7 @@ int main(void)
         avgOutVoltageFB = (uint32_t)(sumOutVoltFB / MOV_AVG_WINDOW);
         avgOutCurrentFB = (uint16_t)(sumOutCurrFB / MOV_AVG_WINDOW);
 
-     
+
     }
     /* USER CODE END WHILE */
 
